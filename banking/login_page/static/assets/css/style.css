@@ -1,0 +1,115 @@
+#header{
+    background-color: aqua; 
+    height: 20%;
+}
+
+#form{
+    margin-left: 20%;
+    border: 2px solid black;
+    margin-right: 100px;
+    padding: 12px;
+}
+.pipe{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#footer{
+    background-color: #4b5257;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+a:link {
+    color: white;
+}
+a:hover {
+    color: white;
+}
+a:active {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+
+#foot{
+    background-color: #1d1e1f;
+
+}
+li a:link{
+    color: black;
+}
+li a:visited {
+    color: black;
+}
+/*Calculate mortgage form*/
+#contactForm {
+    margin: 2% 5%;
+    color: white;
+    background-color: black;
+    border: 6px solid salmon;
+    padding: 3em;
+    width: 700px;
+    text-align: center;
+}
+
+input, textarea {
+    margin: .8em auto;
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: inherit;
+
+    display: block;
+    width: 280px;
+    padding: .4em;
+}
+textarea { height: 80px; resize: none; }
+
+.formBtn {
+    width: 140px;
+    display: inline-block;
+
+    background: teal;
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.2em;
+    border: none;
+    height: 30px;
+}
+
+/*
+display calculations*/
+#calc{
+    background-color: rgba(75,56,65,0.68);
+}
+.accounts{
+    background-color: #1d1e1f;
+    color: white;
+    height: 150px;
+    width: 200px;
+
+}
+.accountshdr{
+    color: #000000;
+    background-color: #ffa422;
+    height: 100%;
+    width: 200px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+.balance{
+font-family: 'Graduate', cursive;
+font-size: xx-large;
+text-align: center;
+}
+
+#amttransfer{
+width: 245px;
+}
+
+#sidebar{
+    background-color: #1d1e1f;
+    color: white;
+}
+#transferform{
+    padding:10px;
+}

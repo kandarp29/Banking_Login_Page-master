@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link type="text/css" rel="stylesheet" href="_style/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="_style/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="_script/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav id="nav-placeholder"></nav>
+<div class="container-fluid">
+    <form class="form-signin mt-5 mb-5" style="border: 2px solid red; max-width: 330px; padding: 15px;margin: 0 auto;">
+        <h2 class="form-signin-heading">Forget Password</h2>
+        <div class="form-group">
+            <label>Account Number:&nbsp;</label>
+            <input type="text" class="form-control" placeholder="Acc No" required autofocus>
+        </div>
+        <div class="form-group">
+            <label>Last Name:&nbsp;</label>
+            <input type="text" placeholder="LastName" class="form-control" required autofocus>
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <button class="btn btn-primary">Reset</button>
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+    </form>
+    <div class="container pb-4" style="background-color: #e4a854b8;">
+        <div class="row" style="padding-left: 10px;">
+            <i class="fa fa-lock" aria-hidden="true" style="padding-top: 5px;padding-right: 5px;"></i>
+            <strong>Secure area</strong>
+
+        </div>
+        <span><a href="#" style="color: darkblue;s">Privacy & Security</a></span>
+        <div style="margin-top: 20px;">
+            <span>Piggi Bank, N.A. Member FDIC. Equal Housing Lender</span><i class="fa fa-home" aria-hidden="true"
+                                                                              style="padding-top: 5px;padding-right: 5px;padding-left: 5px;"></i>
+            <br>
+            <span>&copy; Piggi Bank Corporation.</span>
+        </div>
+
+    </div>
+    <div style="height: 86px;"></div>
+    <div id="footer-holder"></div>
+</div>
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    $.get("footer.html", function (data) {
+        $("#footer-holder").replaceWith(data);
+    });
+    $.get("nav.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script>
+</body>
+</html>

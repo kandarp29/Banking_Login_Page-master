@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="_style/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="_style/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="_script/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav id="nav-placeholder"></nav>
+<div class="container-fluid">
+    <div style="height: 602px;">
+        <div class=" h-75 row align-items-center">
+            <div class="col-3">
+                <p class="accountshdr text-center">Piggi Bank</p>
+                <div class="accounts">
+                    <p class="p-4">Hello, Bhavya You've Successfully Logged in. Your Last login was on <span id="datetoday"></span>.</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <p class="accountshdr text-center">Checking Account</p>
+                <div class="accounts">
+                    <p>Regular Checking Account - (0528)</p>
+                    <p class="balance" id="checkingbal">$1200.00</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <p class="accountshdr text-center">Savings Account</p>
+                <div class="accounts">
+                    <p>Regular Savings Account - (0565)</p>
+                    <p class="balance" id="savingsbal">$825.00</p>
+                </div>
+            </div>
+            <div class="col-3" id="sidebar">
+                <span style="font-size: x-large;">Transfer Money &nbsp;<i class="fa fa-exchange" aria-hidden="true"></i></span>
+                <form id="transferform">
+                    <div class="form-group">
+                        <label class="control-label"><strong>From</strong> </label>
+                        <div class="input-group">
+                            <select id="fromacc" >
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="checkingacc">Regular Checking Account - (0528)</option>
+                                <option value="savingsacc">Regular Savings Account - (0565)</option>
+                            </select>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label"><strong>To</strong></label>
+                        <div class="input-group">
+                            <select id="toacc">
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="checkingacc">Regular Checking Account - (0528)</option>
+                                <option value="savingsacc">Regular Savings Account - (0565)</option>
+                            </select>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label"><strong>Ammount</strong></label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+                            <input type="text" id="amttransfer" required />
+                            <br/>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-warning" id="transfermoney">Transfer</button>
+                </form>
+            </div>
+        </div>      <!--row accounts-->
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+
+            </div>
+            <div class="col-2"></div>
+        </div>  <!--recent activity row-->
+    </div>      <!--main container-->
+
+    <div id="footer-holder"></div>
+</div>
+
+<script src="_script/script.js"></script>
+<script>
+    $.get("nav.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+    });
+    $.get("footer.html", function (data) {
+        $("#footer-holder").replaceWith(data);
+    });
+</script>
+</body>
+</html>
